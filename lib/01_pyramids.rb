@@ -10,7 +10,7 @@ puts"voici la pyramide :"
 if etage.between?(1, 25)
 
    etage.times do |var|
-    puts (brique * (var+1)) + (space * (var+1)) 
+    puts (brique * (var+1)) + (space * (var+1))
    end
 else puts "Choisis un nombre entre 1 et 25 plz"
 

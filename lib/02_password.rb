@@ -8,6 +8,7 @@ def login
     puts "Veuillez entrer votre mot de passe"
     print "> "
     ecriture_mdp = gets.chomp
+    welcome_screen
 end
 
 def welcome_screen
@@ -20,7 +21,9 @@ def perform
     ecriture_mdp=login
     if ecriture_mdp == mdp
     welcome_screen
-    else puts "mauvais mot de passe veuillez reessayer"
+    else 
+        puts "mauvais mot de passe veuillez reessayer"   
+        login
     end
 end
 
